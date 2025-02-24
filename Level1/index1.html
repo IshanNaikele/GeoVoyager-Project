@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Quiz Game</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <h1>Geography Quiz Game</h1>
+    
+    <div class="quiz-container">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="score-display">
+            Score: <span id="score">0</span> / <span id="total-questions">10</span>
+        </div>
+        
+        <div id="quiz-content">
+            <div class="question" id="question">Loading question...</div>
+            
+            <div class="options" id="options">
+                <div class="option">Loading options...</div>
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <div class="controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn" disabled>Next Question</button>
+            </div>
+        </div>
+        
+        <div class="results" id="results">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score: <span id="final-score">0</span> / <span id="final-total">10</span></p>
+            <p id="result-feedback"></p>
+            <button class="restart-btn" id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
